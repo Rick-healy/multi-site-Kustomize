@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: website-content
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Website 3</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 40px;
+          text-align: center;
+          background-color: #fff5f5;
+        }
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ffb6c1;
+          border-radius: 5px;
+          background-color: white;
+        }
+        h1 {
+          color: #dc143c;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Welcome to Website 3</h1>
+        <p>This is the third custom website deployment managed through Kustomize overlays.</p>
+        <p>Site ID: Website-3</p>
+        <p>This website demonstrates how easily we can scale to multiple sites using the same base configuration.</p>
+      </div>
+    </body>
+    </html>
